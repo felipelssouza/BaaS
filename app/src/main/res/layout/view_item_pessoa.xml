@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/campo_lista_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="João Paulo da Silva"/>
+
+    <TextView
+        android:id="@+id/campo_lista_idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campo_lista_nome"
+        tools:text="31 Anos"/>
+
+    <TextView
+        android:id="@+id/campo_lista_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/campo_lista_idade"
+        tools:text="email@dominio.com"/>
+
+    <TextView
+        android:id="@+id/botao_remover"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:hint="remover"
+        android:text="X"/>
+
+</RelativeLayout>

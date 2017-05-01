@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/botao_fechar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="X" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="nome: "/>
+
+        <EditText
+            android:id="@+id/campo_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Nome cadastrado" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="e-mail: "/>
+
+        <EditText
+            android:id="@+id/campo_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="E-mail cadastrado" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="idade: "/>
+
+        <EditText
+            android:id="@+id/campo_idade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:gravity="center"
+            tools:text="32" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botao_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textAllCaps="false"
+        android:text="alterar"/>
+
+
+</LinearLayout>

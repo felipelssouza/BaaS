@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BaaS</string>
+    <string name="id_pessoa">id</string>
+    <string name="nome_pessoa">nome</string>
+    <string name="email_pessoa">e-mail</string>
+    <string name="idade_pessoa">idade</string>
+    <string name="botao_gravar">gravar</string>
+    <string name="botao_cadastrar">cadastrar</string>
+    <string name="botao_listar">listar pessoas</string>
+</resources>
