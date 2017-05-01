@@ -1,6 +1,5 @@
 package br.com.mob11.baas.activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -30,7 +29,6 @@ public class LoginActivity extends BaseActivity {
     private final String TAG = "LOG_LOGIN";
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    private Context mContext;
 
     EditText email;
     EditText senha;
@@ -44,7 +42,6 @@ public class LoginActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mContext = this;
         mAuth = FirebaseAuth.getInstance();
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -54,8 +51,6 @@ public class LoginActivity extends BaseActivity {
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                } else {
-                    // do nothing
                 }
             }
         };
